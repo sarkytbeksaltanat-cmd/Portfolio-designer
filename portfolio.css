@@ -1,0 +1,201 @@
+h1{
+    font-family: 'Georgia', serif;
+    font-size: 7rem;
+    letter-spacing: 3px;
+    color: white;
+    padding-top: 220px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: 4.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 200px;
+}
+h3{
+    font-weight: 300px;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: white;
+    position: relative;
+    z-index: 1; 
+}
+h4{
+    text-align: center;
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 200px;
+}
+.header{
+    background-color: black;
+    min-height: 80vh;
+}
+.logo{
+    text-align: center;
+}
+
+nav ul li:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+    background: #333; 
+}
+
+.row{
+    justify-content: center;
+}
+
+p{
+    font-family: monospace;
+    font-size: 1.4em;
+    color:  #b993ad;
+}
+.ava {
+    border-radius: 15px;
+    transition: all 0.5s ease; 
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* бастапқыда көлеңке жоқ */
+}
+
+.ava:hover {
+    transform: scale(1.1) rotate(2deg); /* сәл үлкейіп бұрылады */
+    box-shadow: 0 10px 30px rgba(70, 69, 69, 0.5); /* көлеңке қосады */
+    filter: brightness(1); /* сурет сәл жарықтанады */
+}
+body{
+    background-color: rgb(238, 236, 236);
+}
+.rows{
+    gap: 1.5rem;
+}
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden; /*артық шеттерін жасырады*/
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+}
+.card img {
+    height: 270px; 
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.card:hover {
+    transform: translateY(-8px); /* тінтуір апарғанда қозғалады*/
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+.card:hover img {
+    transform: scale(1.05); 
+}
+.card-title {
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+.card-text {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.ambassador {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    margin: auto;
+    transition: transform 0.5s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+.ambassador img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+.ambassador:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.3);
+}
+.overlay {   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    padding: 20px;
+}
+.overlay h5 {  /*<Сурет үстіне шығатын бет*/
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #fff;
+}
+.overlay p {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+.ambassador:hover .overlay {  /*< тінтуір апарғанда сурет үстіне шығатын бет*/
+    opacity: 1;
+}
+.videotext{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background: rgb(36 36 36 / 40%); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 60px 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footerlogo{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    text-shadow: 2px 3px 6px white;
+}
+.ft-columns{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.column{
+    width: 20%;
+    min-width: 200px;
+}
+.ft-columns h4{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+.ft-columns ul{
+    list-style: none;
+    padding: 0;
+}
+.ft-columns ul li{
+    margin-bottom: 8px;
+}
+.ft-columns ul li a{
+    color: #aaa;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.ft-columns ul li a:hover{
+    color: white;
+}
